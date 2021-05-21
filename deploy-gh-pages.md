@@ -1,3 +1,16 @@
+TODO
+===
+- [ ] - new repo on github website
+- [ ] - git clone
+- [ ] - create-react-app with same folder name
+- [ ] - npm install gh-pages
+- [ ] - change homepage on package.json
+- [ ] - add deploy script  on package.json
+- [ ] - remove /build from ignore
+- [ ] - npm run deploy
+
+end
+===
 # Deploying a React App* to GitHub Pages
 
 \* created using `create-react-app`
