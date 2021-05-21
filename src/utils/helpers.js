@@ -12,6 +12,7 @@ const helpers = {
 		'url',
 		'desc',
 		'lang',
+		'serv',
 		'libs',
 		'date',
 		'tags'
@@ -24,12 +25,14 @@ const helpers = {
 		'url': 'fab fa-safari text-2xl',
 		'desc': 'fas fa-comment-dots text-2xl',
 		'lang': 'fas fa-code text-2xl',
+		'serv': 'fas fa-server text-2xl',
 		'libs': 'fas fa-book text-2xl',
 		'date': 'fas fa-calendar-check text-2xl',
 		'tags': 'fas fa-tags text-2xl'
   },
 	langIcons: {
-		'js': 'fab fa-node-js text-2xl text-success',
+		'node': 'fab fa-node text-2xl',
+		'js': 'fab fa-js-square text-xl',
 		'py': 'fab fa-python text-2xl text-primary bg-warning p-1 rounded-xl'
   },
   

@@ -4,8 +4,8 @@ function TableBody ( props ) {
 			{props.rows.map((row, index) => (
 				<tr key={index} className="py-0">
           <th scope="row" className="text-sm align-middle">
-            <i className="text-info text-xl fab fa-app-store"></i>
-							<b className="">{index + 1}</b>
+            <i className="text-info fas fa-hashtag mx-0"></i>
+							<b className="text-info">{index + 1}</b>
 					</th> 
 					{Object.keys(row).map((key, idx) => {
 						if (key.startsWith('image')) {
@@ -20,7 +20,7 @@ function TableBody ( props ) {
 							);
 						} else if (key === 'title'){
 							return (
-                <td key={ idx } className='text-lg text-capitalize align-middle  py-1'>
+                <td key={ idx } className='text-capitalize align-middle  py-1'>
                   <b>
 									{row[key]}
                   </b>
@@ -44,7 +44,13 @@ function TableBody ( props ) {
 							);
 						} else if (key === 'lang'){
 							return (
-								<td key={idx} className='align-middle  py-1'>
+								<td key={idx} className='text-info align-middle  py-1'>
+									<i className={props.icons[row[key]]}></i>
+								</td>
+							);
+						} else if (key === 'serv'){
+							return (
+								<td key={idx} className='text-info align-middle  py-1'>
 									<i className={props.icons[row[key]]}></i>
 								</td>
 							);
