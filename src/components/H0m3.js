@@ -5,17 +5,16 @@ import Table from 'react-bootstrap/Table';
 import TableHeader from '../table/TableHeader';
 import TableBody from '../table/TableBody';
 import helpers from '../../utils/helpers';
-import sample from '../../seeds/sample';
+import API from '../../utils/API';
 import SearchFullName from '../search/SearchFullName';
 import SearchAddress from '../search/SearchAddress';
 import SearchCountry from '../search/SearchCountry';
 
 const Home = () => {
-	// const [ rows, setRows ] = useState( helpers.prep( sample ) );
 	const [search, setSearch] = useState({
-		FullName: '',
-		Address: '',
-		Country: ''
+		desc: '',
+		tags: '',
+		title: ''
 	});
 	const [rows, setRows] = useState([]);
 	const [initial, setInitial] = useState([]);
@@ -26,8 +25,7 @@ const Home = () => {
 		API.fetch(20)
 			.then((res) => {
 				console.log(`res`, res);
-				const org = helpers.prep(res);
-				setRows(org);
+				setRows(res);
 				console.log(`org.length`, org.length);
 				console.log(`rows.length`, rows.length);
 				if (org.length === 20) {

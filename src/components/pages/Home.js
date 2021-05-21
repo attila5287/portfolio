@@ -27,7 +27,8 @@ const Home = () => {
 		API.fetch(20)
 			.then((res) => {
 				console.log(`res`, res);
-				const org = helpers.prep(res);
+				// const org = helpers.prep(res);
+				const org = res;
 				setRows(org);
 				console.log(`org.length`, org.length);
 				console.log(`rows.length`, rows.length);

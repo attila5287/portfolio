@@ -17,8 +17,8 @@ function SearchAddress(props) {
 					<input
 						onChange={props.handleInputChange}
 						onSubmit={props.handleSubmit}
-						value={props.search['Address']}
-						name="Address"
+						value={props.search['desc']}
+						name="desc"
 						type="text"
 						className="form-control form-control-lg"
 						placeholder="by address"

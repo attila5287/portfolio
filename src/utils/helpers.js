@@ -1,52 +1,33 @@
+import code from '../components/seeds/code';
+
 const helpers = {
-  prep: ( json ) => {
-    let res= [];
-    ( json.data.results ).forEach( ( r, i ) => {
-      // console.log(`r`, r)
-      let row = {
-				Picture: r.picture.thumbnail,
-				FullName: r.name.first + ' '  + r.name.last,
-				Address: [
-					r.location.street.number + ' ' + r.location.street.name,
-					r.location.city,
-					r.location.state,
-					r.location.postcode
-				].join(', '),
-				Country: r.location.country,
-				Email: r.email,
-				Age: r.dob.age,
-				Cell: r.cell,
-				Phone: r.phone
-			};
-      res.push( row );
-      
-      // console.log('---row---')
-      // console.table(row)
-    } )
-    // console.table(res)
-    return res;
+	prep: (json) => {
+		return code;
 	},
 	headings: [
-    'Picture',
-		'FullName',
-		'Address',
-		'Country',
-		'Email',
-		'Age',
-		'Cell',
-		'Phone',
-  ],
-  headIcons: {
-    'Picture' : 'fas fa-image text-2xl',
-    'FullName' : 'fas fa-id-card text-2xl',
-    'Address' : 'fas fa-map-marked-alt text-2xl',
-    'Country' : 'fas fa-flag text-2xl',
-    'Email' : 'fas fa-envelope text-2xl',
-    'Age' : 'fas fa-birthday-cake text-2xl',
-    'Cell' : 'fas fa-mobile-alt text-2xl',
-    'Phone' : 'fas fa-phone text-2xl',
-    
-  }
+		'title',
+		'image0',
+		'image1',
+		'image2',
+		'url',
+		'desc',
+		'lang',
+		'libs',
+		'date',
+		'tags'
+	],
+	headIcons: {
+		'title': 'fab fa-react text-2xl',
+		'image0': 'fab fa-react text-2xl',
+		'image1': 'fab fa-react text-2xl',
+		'image2': 'fab fa-react text-2xl',
+		'url': 'fab fa-react text-2xl',
+		'desc': 'fab fa-react text-2xl',
+		'lang': 'fab fa-react text-2xl',
+		'libs': 'fab fa-react text-2xl',
+		'date': 'fab fa-react text-2xl',
+		'tags': 'fab fa-reac text-2xlt'
+	}
 };
 
 export default helpers;

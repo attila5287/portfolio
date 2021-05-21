@@ -27,7 +27,7 @@ const TableHeader = ( props ) => {
 								</span>
 							</button>
 							<br />
-							<span className="d-none text-secondary">{th}</span>
+							<span className="text-info">{th}</span>
 						</th>
 					))}
 				</tr>

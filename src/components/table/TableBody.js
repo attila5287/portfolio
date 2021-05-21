@@ -8,25 +8,19 @@ function TableBody ( props ) {
 							<b className="">{index + 1}</b>
 					</th> 
 					{Object.keys(row).map((key, idx) => {
-						if (key === 'Picture') {
+						if (key.startsWith('image')) {
 							return (
-								<td
-									key={idx}
-									className="align-middle  py-1"
-								>
+								<td key={idx} className='align-middle  py-1'>
 									<img
 										src={row[key]}
-										alt="img"
-										className="img-mini rounded-xl p-0"
+										alt='img'
+										className='img-mini rounded-xl p-0'
 									/>
 								</td>
 							);
 						} else {
 							return (
-								<td
-									key={idx}
-									className="align-middle  py-1"
-								>
+								<td key={idx} className='align-middle  py-1'>
 									{row[key]}
 								</td>
 							);
