@@ -7,9 +7,9 @@ import TableBody from '../table/TableBody';
 import helpers from '../../utils/helpers';
 import API from '../../utils/API';
 import sample from '../seeds/sample';
-import SearchFullName from '../search/SearchFullName';
-import SearchAddress from '../search/SearchAddress';
-import SearchCountry from '../search/SearchCountry';
+import SearchTitle from '../search/SearchTitle';
+import SearchDesc from '../search/SearchDesc';
+import SearchTags from '../search/SearchTags';
 
 const Home = () => {
 	// const [ rows, setRows ] = useState( helpers.prep( sample ) );
@@ -148,15 +148,15 @@ const Home = () => {
 						></Animated>
 					</div>
 					<div className='col-8 text-left'>
-						<SearchFullName
+						<SearchTitle
 							search={search['FullName']}
 							handleInputChange={(event) => handleInputChange(event)}
 						/>
-						<SearchAddress
+						<SearchDesc
 							search={search['Address']}
 							handleInputChange={(event) => handleInputChange(event)}
 						/>
-						<SearchCountry
+						<SearchTags
 							search={search['Country']}
 							handleInputChange={(event) => handleInputChange(event)}
 						/>

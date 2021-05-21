@@ -1,7 +1,7 @@
 import React from 'react';
 import { Animated } from 'react-animated-css';
 
-function SearchAddress(props) {
+function SearchDesc(props) {
 	return (
 		<Animated
 			animationIn="bounceInRight"
@@ -29,4 +29,4 @@ function SearchAddress(props) {
 	);
 }
 
-export default SearchAddress;
+export default SearchDesc;
