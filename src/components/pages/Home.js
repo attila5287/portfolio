@@ -170,7 +170,7 @@ const Home = () => {
 						icons={helpers.headIcons}
 						handleSortBy={(event) => handleSortBy(event)}
 					/>
-					<TableBody rows={rows} />
+					<TableBody rows={rows} icons={helpers.langIcons} />
 				</Table>
 			</div>
 		</div>

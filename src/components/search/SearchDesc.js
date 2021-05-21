@@ -4,24 +4,24 @@ import { Animated } from 'react-animated-css';
 function SearchDesc(props) {
 	return (
 		<Animated
-			animationIn="bounceInRight"
+			animationIn='bounceInRight'
 			animationInDelay={1000}
 			isVisible={true}
-			className="mini"
+			className='mini'
 		>
-			<form className="row ">
-				<div className="form-group col-2">
-					<h4 className="fas fa-receipt"></h4>
+			<form className='row '>
+				<div className='form-group col-2'>
+					<h4 className='fas fa-comment-dots'></h4>
 				</div>
-				<div className="form-group col rounded">
+				<div className='form-group col rounded'>
 					<input
 						onChange={props.handleInputChange}
 						onSubmit={props.handleSubmit}
 						value={props.search['desc']}
-						name="desc"
-						type="text"
-						className="form-control form-control-lg"
-						placeholder="by description"
+						name='desc'
+						type='text'
+						className='form-control form-control-lg'
+						placeholder='by description'
 					/>
 				</div>
 			</form>
