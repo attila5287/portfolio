@@ -24,7 +24,7 @@ const Home = () => {
 	const [sorted, setSorted] = useState('');
 
 	useEffect(() => {
-		API.fetch(20)
+		API.fetch(15)
 			.then((res) => {
 				console.log(`res`, res);
 				// const org = helpers.prep(res);
@@ -32,11 +32,11 @@ const Home = () => {
 				setRows(org);
 				console.log(`org.length`, org.length);
 				console.log(`rows.length`, rows.length);
-				if (org.length === 20) {
+				if (org.length === 15) {
 					setInitial(org);
 					console.log(`>> ---org`, org);
 					console.log(`>> ---initial`, initial);
-					if (initial.length < 1 && org.length === 20) {
+					if (initial.length < 1 && org.length === 15) {
 						setInitial(org);
 						console.log(`>> ---initial`, initial);
 					}
