@@ -21,7 +21,7 @@ function SearchFullName(props) {
 						name="title"
 						type="text"
 						className="form-control form-control-lg"
-						placeholder="by full name"
+						placeholder="by title"
 					/>
 				</div>
 			</form>

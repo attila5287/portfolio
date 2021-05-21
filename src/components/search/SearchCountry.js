@@ -11,7 +11,7 @@ function SearchCountry(props) {
 		>
 			<form className="row align-items-start">
 				<div className="form-group col-2">
-					<h4 className="fas fa-flag"></h4>
+					<h4 className="fas fa-tags"></h4>
 				</div>
 				<div className="form-group col rounded">
 					<input
@@ -21,7 +21,7 @@ function SearchCountry(props) {
 						name="tags"
 						type="text"
 						className="form-control form-control-lg"
-						placeholder="by country"
+						placeholder="by tags"
 					/>
 				</div>
 			</form>

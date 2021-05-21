@@ -17,16 +17,16 @@ const helpers = {
 		'tags'
 	],
 	headIcons: {
-		'title': 'fab fa-react text-2xl',
-		'image0': 'fab fa-react text-2xl',
-		'image1': 'fab fa-react text-2xl',
-		'image2': 'fab fa-react text-2xl',
-		'url': 'fab fa-react text-2xl',
-		'desc': 'fab fa-react text-2xl',
-		'lang': 'fab fa-react text-2xl',
-		'libs': 'fab fa-react text-2xl',
-		'date': 'fab fa-react text-2xl',
-		'tags': 'fab fa-reac text-2xlt'
+		'title': 'fas fa-id-card text-2xl',
+		'image0': 'fas fa-image text-2xl',
+		'image1': 'fas fa-image text-2xl',
+		'image2': 'fas fa-image text-2xl',
+		'url': 'fas fa-external-link-alt text-2xl',
+		'desc': 'fas fa-receipt text-2xl',
+		'lang': 'fas fa-code text-2xl',
+		'libs': 'fas fa-book text-2xl',
+		'date': 'fas fa-calendar-check text-2xl',
+		'tags': 'fas fa-tags text-2xl'
 	}
 };
 

@@ -11,7 +11,7 @@ function SearchAddress(props) {
 		>
 			<form className="row ">
 				<div className="form-group col-2">
-					<h4 className="fas fa-map-marked-alt"></h4>
+					<h4 className="fas fa-receipt"></h4>
 				</div>
 				<div className="form-group col rounded">
 					<input
@@ -21,7 +21,7 @@ function SearchAddress(props) {
 						name="desc"
 						type="text"
 						className="form-control form-control-lg"
-						placeholder="by address"
+						placeholder="by description"
 					/>
 				</div>
 			</form>
