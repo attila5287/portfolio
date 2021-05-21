@@ -2,7 +2,18 @@ html,
 body {
   font-size: 0.85rem;
 }
-
+.far  {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.fas {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.fab {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 a.nav-a {
   text-decoration: none;
 }
